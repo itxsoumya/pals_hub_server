@@ -9,7 +9,6 @@ This project is under developement
 
 ## Setup on Local System
 
-Install my-project with npm
 
 ```bash
   git clone git@github.com:itxsoumya/pals_hub_server.git
@@ -30,8 +29,4 @@ Install my-project with npm
 ## Contributing
 
 Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-Please adhere to this project's `code of conduct`.
 
