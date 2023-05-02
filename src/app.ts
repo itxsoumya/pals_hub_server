@@ -1,15 +1,25 @@
 import express from 'express'
 import dotenv from 'dotenv'
+import router from './routers'
+import  connect  from './db'
+import http from 'http'
+import bodyParser from 'body-parser'
 
 dotenv.config()
 
 const app = express()
 const PORT = process.env.PORT
 
-app.get('/hello', (req: express.Request, res: express.Response) => {
-    res.json({ msg: "you are welcome" })
+
+app.use(bodyParser.json())
+
+
+
+const server = http.createServer(app)
+server.listen(PORT,()=>{
+    console.log(`[+] app started on http://localhost:${PORT}/`)
+    
 })
 
-app.listen(PORT,()=>{
-    console.log('App has been started....')
-})
+connect()
+app.use('/',router)
