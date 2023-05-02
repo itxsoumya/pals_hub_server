@@ -13,7 +13,7 @@ This project is under developement
 ```bash
   git clone git@github.com:itxsoumya/pals_hub_server.git
   npm install
-  cd my-project
+  cd pals_hub_server
 ```
 ## Run
 
