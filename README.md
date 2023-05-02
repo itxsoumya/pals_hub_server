@@ -12,8 +12,8 @@ This project is under developement
 
 ```bash
   git clone git@github.com:itxsoumya/pals_hub_server.git
-  npm install
   cd pals_hub_server
+  npm install 
 ```
 ## Run
 
